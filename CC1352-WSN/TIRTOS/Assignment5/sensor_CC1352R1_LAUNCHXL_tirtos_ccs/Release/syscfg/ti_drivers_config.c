@@ -52,6 +52,54 @@ const Display_Config Display_config[CONFIG_Display_COUNT] = {
 const uint_least8_t Display_count = CONFIG_Display_COUNT;
 
 /*
+ *  =============================== ADC ===============================
+ */
+
+#include <ti/drivers/ADC.h>
+#include <ti/drivers/adc/ADCCC26XX.h>
+
+#define CONFIG_ADC_COUNT 1
+
+/*
+ *  ======== adcCC26xxObjects ========
+ */
+ADCCC26XX_Object adcCC26xxObjects[CONFIG_ADC_COUNT];
+
+/*
+ *  ======== adcCC26xxHWAttrs ========
+ */
+const ADCCC26XX_HWAttrs adcCC26xxHWAttrs[CONFIG_ADC_COUNT] = {
+    /* CONFIG_ADC_0 */
+    /* DRV5055 Analog Output */
+    {
+        .adcDIO              = IOID_23,
+        .adcCompBInput       = ADC_COMPB_IN_AUXIO7,
+        .refSource           = ADCCC26XX_FIXED_REFERENCE,
+        .samplingDuration    = ADCCC26XX_SAMPLING_DURATION_2P7_US,
+        .inputScalingEnabled = true,
+        .refVoltage          = 3300000,
+        .triggerSource       = ADCCC26XX_TRIGGER_MANUAL,
+        .returnAdjustedVal   = false
+    },
+};
+
+/*
+ *  ======== ADC_config ========
+ */
+const ADC_Config ADC_config[CONFIG_ADC_COUNT] = {
+    /* CONFIG_ADC_0 */
+    /* DRV5055 Analog Output */
+    {
+        .fxnTablePtr = &ADCCC26XX_fxnTable,
+        .object = &adcCC26xxObjects[CONFIG_ADC_0],
+        .hwAttrs = &adcCC26xxHWAttrs[CONFIG_ADC_0]
+    },
+};
+
+const uint_least8_t CONFIG_ADC_0_CONST = CONFIG_ADC_0;
+const uint_least8_t ADC_count = CONFIG_ADC_COUNT;
+
+/*
  *  =============================== AESCCM ===============================
  */
 
@@ -111,13 +159,17 @@ const UDMACC26XX_Config UDMACC26XX_config[1] = {
 #include <ti/drivers/GPIO.h>
 #include <ti/drivers/gpio/GPIOCC26XX.h>
 
-#define CONFIG_GPIO_COUNT 4
+#define CONFIG_GPIO_COUNT 6
 
 /*
  *  ======== gpioPinConfigs ========
  *  Array of Pin configurations
  */
 GPIO_PinConfig gpioPinConfigs[] = {
+    /* CONFIG_GPIO_OPT_INT : OPT3001 Interrupt */
+    GPIOCC26XX_DIO_27 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_NONE,
+    /* CONFIG_GPIO_HDC_INT : HDC2080 Interrupt */
+    GPIOCC26XX_DIO_25 | GPIO_CFG_IN_NOPULL | GPIO_CFG_IN_INT_NONE,
     /* CONFIG_GPIO_BTN1 : LaunchPad Button BTN-1 (Left) */
     GPIOCC26XX_DIO_15 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_FALLING,
     /* CONFIG_GPIO_BTN2 : LaunchPad Button BTN-2 (Right) */
@@ -137,6 +189,10 @@ GPIO_PinConfig gpioPinConfigs[] = {
  *  (GPIO.optimizeCallbackTableSize = true)
  */
 GPIO_CallbackFxn gpioCallbackFunctions[] = {
+    /* CONFIG_GPIO_OPT_INT : OPT3001 Interrupt */
+    NULL,
+    /* CONFIG_GPIO_HDC_INT : HDC2080 Interrupt */
+    NULL,
     /* CONFIG_GPIO_BTN1 : LaunchPad Button BTN-1 (Left) */
     NULL,
     /* CONFIG_GPIO_BTN2 : LaunchPad Button BTN-2 (Right) */
@@ -147,6 +203,8 @@ GPIO_CallbackFxn gpioCallbackFunctions[] = {
     NULL,
 };
 
+const uint_least8_t CONFIG_GPIO_OPT_INT_CONST = CONFIG_GPIO_OPT_INT;
+const uint_least8_t CONFIG_GPIO_HDC_INT_CONST = CONFIG_GPIO_HDC_INT;
 const uint_least8_t CONFIG_GPIO_BTN1_CONST = CONFIG_GPIO_BTN1;
 const uint_least8_t CONFIG_GPIO_BTN2_CONST = CONFIG_GPIO_BTN2;
 const uint_least8_t CONFIG_GPIO_RLED_CONST = CONFIG_GPIO_RLED;
@@ -158,10 +216,57 @@ const uint_least8_t CONFIG_GPIO_GLED_CONST = CONFIG_GPIO_GLED;
 const GPIOCC26XX_Config GPIOCC26XX_config = {
     .pinConfigs = (GPIO_PinConfig *)gpioPinConfigs,
     .callbacks = (GPIO_CallbackFxn *)gpioCallbackFunctions,
-    .numberOfPinConfigs = 4,
-    .numberOfCallbacks = 4,
+    .numberOfPinConfigs = 6,
+    .numberOfCallbacks = 6,
     .intPriority = (~0)
 };
+
+/*
+ *  =============================== I2C ===============================
+ */
+
+#include <ti/drivers/I2C.h>
+#include <ti/drivers/i2c/I2CCC26XX.h>
+#include <ti/drivers/power/PowerCC26XX.h>
+
+#define CONFIG_I2C_COUNT 1
+
+/*
+ *  ======== i2cCC26xxObjects ========
+ */
+I2CCC26XX_Object i2cCC26xxObjects[CONFIG_I2C_COUNT];
+
+/*
+ *  ======== i2cCC26xxHWAttrs ========
+ */
+const I2CCC26XX_HWAttrsV1 i2cCC26xxHWAttrs[CONFIG_I2C_COUNT] = {
+    /* CONFIG_I2C_0 */
+    /* LaunchPad SensorTag I2C bus */
+    {
+        .baseAddr    = I2C0_BASE,
+        .powerMngrId = PowerCC26XX_PERIPH_I2C0,
+        .intNum      = INT_I2C_IRQ,
+        .intPriority = (~0),
+        .swiPriority = 0,
+        .sclPin      = IOID_4,
+        .sdaPin      = IOID_5
+    },
+};
+
+/*
+ *  ======== I2C_config ========
+ */
+const I2C_Config I2C_config[CONFIG_I2C_COUNT] = {
+    /* CONFIG_I2C_0 */
+    /* LaunchPad SensorTag I2C bus */
+    {
+        .object      = &i2cCC26xxObjects[CONFIG_I2C_0],
+        .hwAttrs     = &i2cCC26xxHWAttrs[CONFIG_I2C_0]
+    },
+};
+
+const uint_least8_t CONFIG_I2C_0_CONST = CONFIG_I2C_0;
+const uint_least8_t I2C_count = CONFIG_I2C_COUNT;
 
 /*
  *  =============================== NVS ===============================
@@ -231,9 +336,19 @@ const uint_least8_t NVS_count = CONFIG_NVS_COUNT;
 #include <ti/drivers/PIN.h>
 #include <ti/drivers/pin/PINCC26XX.h>
 
-#define CONFIG_PIN_COUNT 6
+#define CONFIG_PIN_COUNT 11
 
 const PIN_Config BoardGpioInitTable[CONFIG_PIN_COUNT + 1] = {
+    /* DRV5055 Analog Output, Parent Signal: CONFIG_ADC_0 ADC Pin, (DIO23) */
+    CONFIG_PIN_4 | PIN_INPUT_EN | PIN_NOPULL | PIN_IRQ_DIS,
+    /* OPT3001 Interrupt, Parent Signal: CONFIG_GPIO_OPT_INT GPIO Pin, (DIO27) */
+    CONFIG_PIN_2 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_DIS,
+    /* HDC2080 Interrupt, Parent Signal: CONFIG_GPIO_HDC_INT GPIO Pin, (DIO25) */
+    CONFIG_PIN_3 | PIN_INPUT_EN | PIN_NOPULL | PIN_IRQ_DIS,
+    /* LaunchPad SensorTag I2C bus, Parent Signal: CONFIG_I2C_0 SDA, (DIO5) */
+    CONFIG_PIN_0 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_DIS,
+    /* LaunchPad SensorTag I2C bus, Parent Signal: CONFIG_I2C_0 SCL, (DIO4) */
+    CONFIG_PIN_1 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_DIS,
     /* XDS110 UART, Parent Signal: CONFIG_DISPLAY_UART TX, (DIO13) */
     CONFIG_PIN_UART_TX | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MED,
     /* XDS110 UART, Parent Signal: CONFIG_DISPLAY_UART RX, (DIO12) */

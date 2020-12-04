@@ -226,6 +226,7 @@ application/cui/cui.obj: C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/run
 application/cui/cui.obj: C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/runtime/package/System_SupportProxy.h
 application/cui/cui.obj: C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/runtime/package/System_Module_GateProxy.h
 application/cui/cui.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h
+application/cui/cui.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
 application/cui/cui.obj: ../application/cui/cui.h
 application/cui/cui.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdlib.h
 application/cui/cui.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/apps/Button.h
@@ -456,6 +457,7 @@ C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/runtime/IGateProvider.h:
 C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/runtime/package/System_SupportProxy.h: 
 C:/ti/ccs1010/xdctools_3_61_02_27_core/packages/xdc/runtime/package/System_Module_GateProxy.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
 ../application/cui/cui.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdlib.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/apps/Button.h: 

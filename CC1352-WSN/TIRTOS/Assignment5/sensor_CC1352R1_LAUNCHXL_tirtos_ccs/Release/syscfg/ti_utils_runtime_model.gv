@@ -24,6 +24,11 @@ digraph Model
     CONFIG_DISPLAY -> ti_drivers_Board
     CONFIG_DISPLAY -> CONFIG_DISPLAY_UART
 
+    // mod.$name=/ti/drivers/ADC
+    CONFIG_ADC_0 -> ti_drivers_Power
+    CONFIG_ADC_0 -> ti_drivers_Board
+    CONFIG_ADC_0 -> CONFIG_PIN_4
+
     // mod.$name=/ti/drivers/AESCCM
     CONFIG_AESCCM_0 -> ti_drivers_DMA
     CONFIG_AESCCM_0 -> ti_drivers_Power
@@ -38,10 +43,18 @@ digraph Model
     // mod.$name=/ti/drivers/GPIO
     ti_drivers_GPIO -> ti_drivers_Power
     ti_drivers_GPIO -> ti_drivers_Board
+    CONFIG_GPIO_OPT_INT -> CONFIG_PIN_2
+    CONFIG_GPIO_HDC_INT -> CONFIG_PIN_3
     CONFIG_GPIO_BTN1 -> CONFIG_PIN_BTN1
     CONFIG_GPIO_BTN2 -> CONFIG_PIN_BTN2
     CONFIG_GPIO_RLED -> CONFIG_PIN_RLED
     CONFIG_GPIO_GLED -> CONFIG_PIN_GLED
+
+    // mod.$name=/ti/drivers/I2C
+    CONFIG_I2C_0 -> ti_drivers_Power
+    CONFIG_I2C_0 -> ti_drivers_Board
+    CONFIG_I2C_0 -> CONFIG_PIN_0
+    CONFIG_I2C_0 -> CONFIG_PIN_1
 
     // mod.$name=/ti/drivers/NVS
     CONFIG_NVSINTERNAL -> ti_drivers_Board

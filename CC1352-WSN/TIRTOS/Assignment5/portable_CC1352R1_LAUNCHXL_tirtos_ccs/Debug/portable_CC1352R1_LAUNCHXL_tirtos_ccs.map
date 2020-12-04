@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.1                     
 ******************************************************************************
->> Linked Mon Nov 23 14:01:02 2020
+>> Linked Fri Dec  4 15:12:40 2020
 
 OUTPUT FILE NAME:   <portable_CC1352R1_LAUNCHXL_tirtos_ccs.out>
 ENTRY POINT SYMBOL: "ResetISR"  address: 000039a1

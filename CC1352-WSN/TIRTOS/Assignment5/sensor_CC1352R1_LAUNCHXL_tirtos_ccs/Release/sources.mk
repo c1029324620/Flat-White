@@ -128,7 +128,10 @@ GEN_OPTS__QUOTED :=
 SUBDIRS := \
 . \
 application/cui \
+application/lpstk/adxl362 \
+application/lpstk \
 application \
+application/sail \
 application/sensor/link_controller \
 application/sensor \
 software_stack/ti15_4stack/mac \

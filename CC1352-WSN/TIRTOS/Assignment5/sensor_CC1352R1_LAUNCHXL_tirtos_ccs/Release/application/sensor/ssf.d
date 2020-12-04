@@ -249,6 +249,9 @@ application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/t
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_aon_batmon.h
 application/sensor/ssf.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h
+application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
+application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h
+application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
 application/sensor/ssf.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/software_stack/ti15_4stack/osal/util_timer.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/kernel/tirtos/packages/ti/sysbios/knl/Clock.h
@@ -265,7 +268,6 @@ application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/t
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_fcfg1.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h
-application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_common_cmd.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h
 application/sensor/ssf.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_prop_cmd.h
@@ -532,6 +534,9 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driv
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_aon_batmon.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/software_stack/ti15_4stack/osal/util_timer.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/kernel/tirtos/packages/ti/sysbios/knl/Clock.h: 
@@ -548,7 +553,6 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driv
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_fcfg1.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h: 
-C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_common_cmd.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_prop_cmd.h: 

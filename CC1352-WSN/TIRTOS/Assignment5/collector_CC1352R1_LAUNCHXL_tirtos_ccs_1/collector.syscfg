@@ -65,9 +65,9 @@ LED2.gpioPin.$name             = "CONFIG_GPIO_GLED";
 LED2.gpioPin.pinInstance.$name = "CONFIG_PIN_GLED";
 
 ti154stack.lockProject                        = true;
+ti154stack.aesccmModule.$name                 = "CONFIG_AESCCM_0";
 ti154stack.radioConfig.$name                  = "ti_devices_radioconfig_settings_prop0";
 ti154stack.radioConfig.codeExportConfig.$name = "ti_devices_radioconfig_code_export_param0";
-ti154stack.aesccmModule.$name                 = "CONFIG_AESCCM_0";
 
 /**
  * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future

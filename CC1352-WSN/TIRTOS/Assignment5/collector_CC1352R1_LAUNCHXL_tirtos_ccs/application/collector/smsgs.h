@@ -265,7 +265,7 @@ The <b>Sensor Ramp Data Message</b> is defined as:
     /* Generic request msg */
     Smsgs_cmdIds_genericReq = 18,
     /* Generic response msg */
-    msgs_cmdIds_genericRsp = 19
+    Smsgs_cmdIds_genericRsp = 19,
 
  } Smsgs_cmdIds_t;
 

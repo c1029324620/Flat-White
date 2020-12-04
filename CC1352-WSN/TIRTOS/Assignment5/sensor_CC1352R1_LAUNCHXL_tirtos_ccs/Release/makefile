@@ -15,7 +15,15 @@ ORDERED_OBJS += \
 "./syscfg/ti_radio_config.obj" \
 "./syscfg/ti_drivers_config.obj" \
 "./application/cui/cui.obj" \
+"./application/lpstk/adxl362/scif.obj" \
+"./application/lpstk/adxl362/scif_framework.obj" \
+"./application/lpstk/adxl362/scif_osal_tirtos.obj" \
+"./application/lpstk/lpstk.obj" \
+"./application/lpstk/lpstk_sensors.obj" \
 "./application/main.obj" \
+"./application/sail/drv5055.obj" \
+"./application/sail/hdc2010.obj" \
+"./application/sail/opt3001.obj" \
 "./application/sensor/link_controller/jdllc.obj" \
 "./application/sensor/sensor.obj" \
 "./application/sensor/ssf.obj" \
@@ -42,7 +50,10 @@ RMDIR := RMDIR /S/Q
 -include sources.mk
 -include subdir_vars.mk
 -include application/cui/subdir_vars.mk
+-include application/lpstk/adxl362/subdir_vars.mk
+-include application/lpstk/subdir_vars.mk
 -include application/subdir_vars.mk
+-include application/sail/subdir_vars.mk
 -include application/sensor/link_controller/subdir_vars.mk
 -include application/sensor/subdir_vars.mk
 -include software_stack/ti15_4stack/mac/subdir_vars.mk
@@ -50,7 +61,10 @@ RMDIR := RMDIR /S/Q
 -include software_stack/ti15_4stack/nv/subdir_vars.mk
 -include subdir_rules.mk
 -include application/cui/subdir_rules.mk
+-include application/lpstk/adxl362/subdir_rules.mk
+-include application/lpstk/subdir_rules.mk
 -include application/subdir_rules.mk
+-include application/sail/subdir_rules.mk
 -include application/sensor/link_controller/subdir_rules.mk
 -include application/sensor/subdir_rules.mk
 -include software_stack/ti15_4stack/mac/subdir_rules.mk
@@ -188,8 +202,8 @@ sensor_CC1352R1_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "CC1352R1_LAUNCHXL_fxns.obj" "syscfg\ti_devices_config.obj" "syscfg\ti_radio_config.obj" "syscfg\ti_drivers_config.obj" "application\cui\cui.obj" "application\main.obj" "application\sensor\link_controller\jdllc.obj" "application\sensor\sensor.obj" "application\sensor\ssf.obj" "software_stack\ti15_4stack\mac\api_mac.obj" "software_stack\ti15_4stack\mac\macTask.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_cfg.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_settings.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_user_config.obj" "software_stack\ti15_4stack\nv\crc.obj" "software_stack\ti15_4stack\nv\nvocmp.obj" 
-	-$(RM) "CC1352R1_LAUNCHXL_fxns.d" "syscfg\ti_devices_config.d" "syscfg\ti_radio_config.d" "syscfg\ti_drivers_config.d" "application\cui\cui.d" "application\main.d" "application\sensor\link_controller\jdllc.d" "application\sensor\sensor.d" "application\sensor\ssf.d" "software_stack\ti15_4stack\mac\api_mac.d" "software_stack\ti15_4stack\mac\macTask.d" "software_stack\ti15_4stack\mac\mac_settings\mac_cfg.d" "software_stack\ti15_4stack\mac\mac_settings\mac_settings.d" "software_stack\ti15_4stack\mac\mac_settings\mac_user_config.d" "software_stack\ti15_4stack\nv\crc.d" "software_stack\ti15_4stack\nv\nvocmp.d" 
+	-$(RM) "CC1352R1_LAUNCHXL_fxns.obj" "syscfg\ti_devices_config.obj" "syscfg\ti_radio_config.obj" "syscfg\ti_drivers_config.obj" "application\cui\cui.obj" "application\lpstk\adxl362\scif.obj" "application\lpstk\adxl362\scif_framework.obj" "application\lpstk\adxl362\scif_osal_tirtos.obj" "application\lpstk\lpstk.obj" "application\lpstk\lpstk_sensors.obj" "application\main.obj" "application\sail\drv5055.obj" "application\sail\hdc2010.obj" "application\sail\opt3001.obj" "application\sensor\link_controller\jdllc.obj" "application\sensor\sensor.obj" "application\sensor\ssf.obj" "software_stack\ti15_4stack\mac\api_mac.obj" "software_stack\ti15_4stack\mac\macTask.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_cfg.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_settings.obj" "software_stack\ti15_4stack\mac\mac_settings\mac_user_config.obj" "software_stack\ti15_4stack\nv\crc.obj" "software_stack\ti15_4stack\nv\nvocmp.obj" 
+	-$(RM) "CC1352R1_LAUNCHXL_fxns.d" "syscfg\ti_devices_config.d" "syscfg\ti_radio_config.d" "syscfg\ti_drivers_config.d" "application\cui\cui.d" "application\lpstk\adxl362\scif.d" "application\lpstk\adxl362\scif_framework.d" "application\lpstk\adxl362\scif_osal_tirtos.d" "application\lpstk\lpstk.d" "application\lpstk\lpstk_sensors.d" "application\main.d" "application\sail\drv5055.d" "application\sail\hdc2010.d" "application\sail\opt3001.d" "application\sensor\link_controller\jdllc.d" "application\sensor\sensor.d" "application\sensor\ssf.d" "software_stack\ti15_4stack\mac\api_mac.d" "software_stack\ti15_4stack\mac\macTask.d" "software_stack\ti15_4stack\mac\mac_settings\mac_cfg.d" "software_stack\ti15_4stack\mac\mac_settings\mac_settings.d" "software_stack\ti15_4stack\mac\mac_settings\mac_user_config.d" "software_stack\ti15_4stack\nv\crc.d" "software_stack\ti15_4stack\nv\nvocmp.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

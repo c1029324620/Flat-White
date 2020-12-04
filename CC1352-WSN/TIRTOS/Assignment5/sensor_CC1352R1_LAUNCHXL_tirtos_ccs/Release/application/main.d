@@ -208,12 +208,14 @@ application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devi
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_vims.h
 application/main.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h
+application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
+application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h
+application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/inc/hw_ccfg_simple_struct.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/Power.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/utils/List.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/power/PowerCC26XX.h
-application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/ClockP.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/aon_rtc.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/kernel/tirtos/packages/ti/sysbios/hal/Hwi.h
@@ -255,7 +257,6 @@ application/main.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirt
 application/main.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_154stack_config.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h
-application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_common_cmd.h
 application/main.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h
 application/main.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/string.h
@@ -490,12 +491,14 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driv
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_vims.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/inc/hw_ccfg_simple_struct.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/Power.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/utils/List.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/power/PowerCC26XX.h: 
-C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/ClockP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/aon_rtc.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/kernel/tirtos/packages/ti/sysbios/hal/Hwi.h: 
@@ -537,7 +540,6 @@ C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_154stack_config.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h: 
-C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_common_cmd.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/string.h: 

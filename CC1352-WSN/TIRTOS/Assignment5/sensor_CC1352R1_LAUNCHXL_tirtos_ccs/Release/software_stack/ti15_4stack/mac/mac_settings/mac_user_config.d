@@ -13,8 +13,12 @@ software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/c
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/machine/_types.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/machine/_stdint.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/sys/_stdint.h
-software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
+software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdbool.h
+software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stddef.h
+software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h
+software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
+software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_radio_config.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/string.h
@@ -23,8 +27,6 @@ software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelin
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/ClockP.h
-software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stddef.h
-software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/utils/List.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_ble_cmd.h
 software_stack/ti15_4stack/mac/mac_settings/mac_user_config.obj: ../software_stack/ti15_4stack/mac/mac_settings/mac_user_config.h
@@ -55,8 +57,12 @@ C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/sys/_types.h:
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/machine/_types.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/machine/_stdint.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/sys/_stdint.h: 
-C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdbool.h: 
+C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stddef.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_radio_config.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/string.h: 
@@ -65,8 +71,6 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driv
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RF.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/rf/RFCC26X2.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/ClockP.h: 
-C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stddef.h: 
-C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/utils/List.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/cc13x2_cc26x2/driverlib/rf_ble_cmd.h: 
 ../software_stack/ti15_4stack/mac/mac_settings/mac_user_config.h: 

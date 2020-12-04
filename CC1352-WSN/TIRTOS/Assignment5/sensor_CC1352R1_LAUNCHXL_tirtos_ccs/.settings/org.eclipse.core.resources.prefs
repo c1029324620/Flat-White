@@ -1,6 +1,12 @@
 eclipse.preferences.version=1
 encoding//Release/application/cui/subdir_rules.mk=UTF-8
 encoding//Release/application/cui/subdir_vars.mk=UTF-8
+encoding//Release/application/lpstk/adxl362/subdir_rules.mk=UTF-8
+encoding//Release/application/lpstk/adxl362/subdir_vars.mk=UTF-8
+encoding//Release/application/lpstk/subdir_rules.mk=UTF-8
+encoding//Release/application/lpstk/subdir_vars.mk=UTF-8
+encoding//Release/application/sail/subdir_rules.mk=UTF-8
+encoding//Release/application/sail/subdir_vars.mk=UTF-8
 encoding//Release/application/sensor/link_controller/subdir_rules.mk=UTF-8
 encoding//Release/application/sensor/link_controller/subdir_vars.mk=UTF-8
 encoding//Release/application/sensor/subdir_rules.mk=UTF-8

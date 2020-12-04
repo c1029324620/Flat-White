@@ -32,6 +32,8 @@ CC1352R1_LAUNCHXL_fxns.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/t
 CC1352R1_LAUNCHXL_fxns.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
 CC1352R1_LAUNCHXL_fxns.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h
 CC1352R1_LAUNCHXL_fxns.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h
+CC1352R1_LAUNCHXL_fxns.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
+CC1352R1_LAUNCHXL_fxns.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h
 
 ../CC1352R1_LAUNCHXL_fxns.c: 
 C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-arm_20.2.1.LTS/include/stdbool.h: 
@@ -65,3 +67,5 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/HwiP.h:
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/devices/DeviceFamily.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/dpl/SemaphoreP.h: 

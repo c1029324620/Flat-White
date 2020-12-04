@@ -88,6 +88,7 @@ software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_3
 software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/ti154stack/low_level/cc13xx/mac_symbol_timer.h
 software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/ti154stack/hal/rf/rf_mac_api.h
 software_stack/ti15_4stack/mac/macTask.obj: C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h
+software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h
 software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h
 software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/AESECB.h
 software_stack/ti15_4stack/mac/macTask.obj: C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/cryptoutils/cryptokey/CryptoKey.h
@@ -366,6 +367,7 @@ C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/utils/Random.h:
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/ti154stack/low_level/cc13xx/mac_symbol_timer.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/ti154stack/hal/rf/rf_mac_api.h: 
 C:/Users/c1029/workspace_v10/sensor_CC1352R1_LAUNCHXL_tirtos_ccs/Release/syscfg/ti_drivers_config.h: 
+C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/I2C.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/PIN.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/AESECB.h: 
 C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/source/ti/drivers/cryptoutils/cryptokey/CryptoKey.h: 

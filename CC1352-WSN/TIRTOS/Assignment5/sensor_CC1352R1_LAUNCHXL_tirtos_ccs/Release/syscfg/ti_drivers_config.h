@@ -39,6 +39,16 @@ extern "C" {
 
 
 /*
+ *  ======== ADC ========
+ */
+
+/* DIO23, DRV5055 Analog Output */
+extern const uint_least8_t              CONFIG_ADC_0_CONST;
+#define CONFIG_ADC_0                    0
+#define CONFIG_TI_DRIVERS_ADC_COUNT     1
+
+
+/*
  *  ======== AESCCM ========
  */
 
@@ -51,19 +61,25 @@ extern const uint_least8_t                  CONFIG_AESCCM_0_CONST;
  *  ======== GPIO ========
  */
 
+/* DIO27, OPT3001 Interrupt */
+extern const uint_least8_t              CONFIG_GPIO_OPT_INT_CONST;
+#define CONFIG_GPIO_OPT_INT             0
+/* DIO25, HDC2080 Interrupt */
+extern const uint_least8_t              CONFIG_GPIO_HDC_INT_CONST;
+#define CONFIG_GPIO_HDC_INT             1
 /* DIO15, LaunchPad Button BTN-1 (Left) */
 extern const uint_least8_t              CONFIG_GPIO_BTN1_CONST;
-#define CONFIG_GPIO_BTN1                0
+#define CONFIG_GPIO_BTN1                2
 /* DIO14, LaunchPad Button BTN-2 (Right) */
 extern const uint_least8_t              CONFIG_GPIO_BTN2_CONST;
-#define CONFIG_GPIO_BTN2                1
+#define CONFIG_GPIO_BTN2                3
 /* DIO6, LaunchPad LED Red */
 extern const uint_least8_t              CONFIG_GPIO_RLED_CONST;
-#define CONFIG_GPIO_RLED                2
+#define CONFIG_GPIO_RLED                4
 /* DIO7, LaunchPad LED Green */
 extern const uint_least8_t              CONFIG_GPIO_GLED_CONST;
-#define CONFIG_GPIO_GLED                3
-#define CONFIG_TI_DRIVERS_GPIO_COUNT    4
+#define CONFIG_GPIO_GLED                5
+#define CONFIG_TI_DRIVERS_GPIO_COUNT    6
 
 /* LEDs are active high */
 #define CONFIG_GPIO_LED_ON  (1)
@@ -71,6 +87,37 @@ extern const uint_least8_t              CONFIG_GPIO_GLED_CONST;
 
 #define CONFIG_LED_ON  (CONFIG_GPIO_LED_ON)
 #define CONFIG_LED_OFF (CONFIG_GPIO_LED_OFF)
+
+
+/*
+ *  ======== I2C ========
+ */
+
+/*
+ *  SCL: DIO4
+ *  SDA: DIO5
+ *  LaunchPad SensorTag I2C bus
+ */
+extern const uint_least8_t              CONFIG_I2C_0_CONST;
+#define CONFIG_I2C_0                    0
+#define CONFIG_TI_DRIVERS_I2C_COUNT     1
+
+/* ======== I2C Addresses and Speeds ======== */
+#include <ti/drivers/I2C.h>
+
+/* ---- CONFIG_I2C_0 I2C bus components ---- */
+
+/* LPSTK-CC1352R SENSORS/OPT3001 address and max speed */
+#define CONFIG_I2C_0_LPSTK_CC1352R_SENSORS_OPT3001_ADDR     (0x44)
+#define CONFIG_I2C_0_LPSTK_CC1352R_SENSORS_OPT3001_MAXSPEED (2600U) /* Kbps */
+
+/* LPSTK-CC1352R SENSORS/HDC2080 address and max speed */
+#define CONFIG_I2C_0_LPSTK_CC1352R_SENSORS_HDC2080_ADDR     (0x41)
+#define CONFIG_I2C_0_LPSTK_CC1352R_SENSORS_HDC2080_MAXSPEED (400U) /* Kbps */
+
+/* CONFIG_I2C_0 max speed (supported by all components) */
+#define CONFIG_I2C_0_MAXSPEED   (400U) /* Kbps */
+#define CONFIG_I2C_0_MAXBITRATE ((I2C_BitRate)I2C_400kHz)
 
 
 /*
@@ -89,6 +136,16 @@ extern const uint_least8_t              CONFIG_NVSINTERNAL_CONST;
 
 extern const PIN_Config BoardGpioInitTable[];
 
+/* DRV5055 Analog Output, Parent Signal: CONFIG_ADC_0 ADC Pin, (DIO23) */
+#define CONFIG_PIN_4                   0x00000017
+/* OPT3001 Interrupt, Parent Signal: CONFIG_GPIO_OPT_INT GPIO Pin, (DIO27) */
+#define CONFIG_PIN_2                   0x0000001b
+/* HDC2080 Interrupt, Parent Signal: CONFIG_GPIO_HDC_INT GPIO Pin, (DIO25) */
+#define CONFIG_PIN_3                   0x00000019
+/* LaunchPad SensorTag I2C bus, Parent Signal: CONFIG_I2C_0 SDA, (DIO5) */
+#define CONFIG_PIN_0                   0x00000005
+/* LaunchPad SensorTag I2C bus, Parent Signal: CONFIG_I2C_0 SCL, (DIO4) */
+#define CONFIG_PIN_1                   0x00000004
 /* XDS110 UART, Parent Signal: CONFIG_DISPLAY_UART TX, (DIO13) */
 #define CONFIG_PIN_UART_TX                   0x0000000d
 /* XDS110 UART, Parent Signal: CONFIG_DISPLAY_UART RX, (DIO12) */
@@ -101,7 +158,7 @@ extern const PIN_Config BoardGpioInitTable[];
 #define CONFIG_PIN_RLED                   0x00000006
 /* LaunchPad LED Green, Parent Signal: CONFIG_GPIO_GLED GPIO Pin, (DIO7) */
 #define CONFIG_PIN_GLED                   0x00000007
-#define CONFIG_TI_DRIVERS_PIN_COUNT    6
+#define CONFIG_TI_DRIVERS_PIN_COUNT    11
 
 
 
